@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>6-Day Meal Plan (2300 kcal)</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>6-Day Meal Plan</h1>
+      <p class="sub">
+        High-energy lunches + dinners (no broccoli, no tuna). Sunday = family braai.
+      </p>
+      <div class="actions">
+        <button id="btnPlan" class="btn primary">Plan</button>
+        <button id="btnShop" class="btn">Shopping List</button>
+        <button id="btnPrint" class="btn">Print</button>
+        <button id="btnReset" class="btn danger">Reset Ticks</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="viewPlan" class="card">
+      <div class="row">
+        <div class="col">
+          <h2>Plan</h2>
+          <p class="hint">Tip: Keep lunch carbs to <strong>½–1 cup cooked</strong> and go protein-first.</p>
+        </div>
+
+        <div class="col right">
+          <label class="label">Select day</label>
+          <select id="daySelect" class="select"></select>
+        </div>
+      </div>
+
+      <div id="dayContent"></div>
+
+      <hr class="sep" />
+
+      <div class="braai">
+        <h3>Sunday: Family Braai (Flexible)</h3>
+        <ul>
+          <li><strong>Protein first:</strong> meat, chicken, fish</li>
+          <li><strong>Veg/salad load:</strong> fill up on salads/veg sides</li>
+          <li><strong>Pick one starch:</strong> roll <em>or</em> small potato/pasta salad portion (not all of them)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="viewShop" class="card hidden">
+      <div class="row">
+        <div class="col">
+          <h2>Shopping List</h2>
+          <p class="hint">Tick items as you shop. Ticks save automatically on this device.</p>
+        </div>
+      </div>
+
+      <div id="shoppingContent"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>
+        Built for GitHub Pages • Simple + practical • Local storage only (no tracking).
+      </small>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
